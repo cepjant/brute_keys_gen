@@ -1,5 +1,7 @@
 # brute_keys
 
+
+# Description 
 This script can generate a collection for password brutting, if you know a word, that probably might be used in the password.
 
 You can choose how many characters to add to the end and beginning of the word. 
@@ -10,6 +12,8 @@ For example, if you use word 'home' and you want to add 4 characters to get 8-ch
 
 The script was created for educational purposes.
 
+
+# Описание
 
 Данный скрипт может генерировать набор ключей для брута пароля, если вам известно слово, которое, вероятно, может содержать выбранный вами пароль. 
 
