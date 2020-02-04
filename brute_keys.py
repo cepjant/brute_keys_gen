@@ -5,27 +5,27 @@ import string
 
 def word(word, keys_len):
     if keys_len >= 1:
-        for i in itertools.product(string.ascii_lowercase + string.digits, repeat=1):
+        for i in itertools.product(string.ascii_lowercase + string.digits + "_", repeat=1):
             f.write(word + ''.join(i) + '\n')
             f.write(''.join(i) + word + '\n')
     if keys_len >= 2:
-        for i in itertools.product(string.ascii_lowercase + string.digits, repeat=2):
+        for i in itertools.product(string.ascii_lowercase + string.digits + "_", repeat=2):
             f.write(word + ''.join(i) + '\n')
             f.write(''.join(i) + word + '\n')
     if keys_len >= 3:
-        for i in itertools.product(string.ascii_lowercase + string.digits, repeat=3):
+        for i in itertools.product(string.ascii_lowercase + string.digits + "_", repeat=3):
             f.write(word + ''.join(i) + '\n')
             f.write(''.join(i) + word + '\n')
     if keys_len >= 4:
-        for i in itertools.product(string.ascii_lowercase + string.digits, repeat=4):
+        for i in itertools.product(string.ascii_lowercase + string.digits + "_", repeat=4):
             f.write(word + ''.join(i) + '\n')
             f.write(''.join(i) + word + '\n')
     if keys_len >= 5:
-        for i in itertools.product(string.ascii_lowercase + string.digits, repeat=5):
+        for i in itertools.product(string.ascii_lowercase + string.digits + "_", repeat=5):
             f.write(word + ''.join(i) + '\n')
             f.write(''.join(i) + word + '\n')
     if keys_len >= 6:
-        for i in itertools.product(string.ascii_lowercase + string.digits, repeat=6):
+        for i in itertools.product(string.ascii_lowercase + string.digits + "_", repeat=6):
             f.write(word + ''.join(i) + '\n')
             f.write(''.join(i) + word + '\n')
 
@@ -42,3 +42,4 @@ fpath = dpath + '/' + 'keys_for_brute.txt'
 
 with open(fpath, 'w') as f:
     word(xword, keys_len)
+
