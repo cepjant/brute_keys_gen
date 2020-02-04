@@ -3,7 +3,7 @@ import string
 
 
 
-def word(word, keys_len):
+def keys_gen(word, keys_len):
     if keys_len >= 1:
         for i in itertools.product(string.ascii_lowercase + string.digits + "_", repeat=1):
             f.write(word + ''.join(i) + '\n')
@@ -30,7 +30,7 @@ def word(word, keys_len):
             f.write(''.join(i) + word + '\n')
 
 
-xword = input('Enter a word you want to use: ')
+word = input('Enter a word you want to use: ')
 keys_len = int(input('What is the maximum number of characters you want to add? (1-6): '))
 dpath = input("Enter a directory path to save brute keys in.\n"
             "Be careful! Make sure that there is no file named 'keys_for_brute.txt' in this directory, "
@@ -41,5 +41,5 @@ if dpath[-1] == '/':
 fpath = dpath + '/' + 'keys_for_brute.txt'
 
 with open(fpath, 'w') as f:
-    word(xword, keys_len)
+    keys_gen(word, keys_len)
 
