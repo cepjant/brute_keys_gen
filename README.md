@@ -8,7 +8,7 @@ You can choose amount of characters to add to the end and the beginning of the w
 
 The characters are: english alphabet (ascii lowercase) + digits + '_'.
 
-For example, if you use the word 'home' and you want to add 4 characters to get 8-characters passwod, run this script and you'll get a collection of keys like 'home1234', 'myhome37' and another combinations in the same file.
+For example, if you use the word 'home' and you want to add 4 characters to get 8-characters passwod, run this script and you'll get a collection of keys like 'home1234', 'mymyhome' and another combinations in the same file.
 
 This script was created for educational purposes.
 
@@ -21,6 +21,6 @@ This script was created for educational purposes.
 
 Используемые символы: английский алфавит (строчные буквы) + цифры + '_'.
 
-Например, если вы будете использовать слово 'home', и вам необходимо добавить 4 символа для получения 8-и значного пароля, запустите скрипт и вы получите набор ключей по типу 'home1234', 'myhome37' и любые другие комбинации в одном файле. 
+Например, если вы будете использовать слово 'home', и вам необходимо добавить 4 символа для получения 8-и значного пароля, запустите скрипт и вы получите набор ключей по типу 'home1234', 'mymyhome37' и любые другие комбинации в одном файле. 
 
 Скрипт создан в образовательных целях. 
